@@ -6,6 +6,7 @@ $(document).ready(function () {
         $('#qrResult').show();
         $('#url-error').text('');
         $('#generateWhatsApp').attr('disabled', true);
+        $('#downloadQR').attr('disabled', true);
     }
     resetInputs();
 
