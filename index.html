@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator - Create Customized QR Codes Online</title>
+    <meta name="description"
+        content="Generate personalized QR codes from text or URLs effortlessly. Customize size, colors, and frame design. Perfect for personal or professional use.">
+    <meta name="keywords"
+        content="QR code generator, customized QR codes, QR code creator, generate QR codes, custom QR code, QR code customization">
+
+    <meta name="author" content="Naveen Gupta">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet" />
+    <!-- MDB -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body class="bg-light">
+    <div class="container pt-4 pb-5 text-center">
+        <h1 class="text-center fw-bold my-2"><strong>QRify</strong> - Your Free Quick QR Code Generator
+
+        </h1>
+        <p class="mb-5">personalised QR codes <i class="fa-solid fa-bolt"></i> <strong>Instantly Generate</strong> ,
+            Scan,
+            Share!</p>
+        <div class="col-md-9 mx-auto">
+            <div class="row  bg-white p-4 rounded-2 shadow border">
+                <div class="col-md-8 ">
+                    <div class="row my-2">
+
+
+                        <!-- Tabs navs -->
+                        <ul class="nav nav-tabs mb-3" id="ex-with-icons" role="tablist">
+                            <li class="nav-item me-2" role="presentation">
+                                <a data-mdb-tab-init class="nav-link fw-bold active" id="ex-with-icons-tab-1"
+                                    href="#ex-with-icons-tabs-1" role="tab" aria-controls="ex-with-icons-tabs-1"
+                                    aria-selected="true"><i class="fa-solid fa-globe mx-1"></i> URL</a>
+                            </li>
+                            <li class="nav-item mx-2" role="presentation">
+                                <a data-mdb-tab-init class="nav-link fw-bold" id="ex-with-icons-tab-2"
+                                    href="#ex-with-icons-tabs-2" role="tab" aria-controls="ex-with-icons-tabs-2"
+                                    aria-selected="false"><i class="fa-solid fa-file-lines mx-1"></i> Text</a>
+                            </li>
+                            <li class="nav-item ms-2" role="presentation">
+                                <a data-mdb-tab-init class="nav-link fw-bold" id="ex-with-icons-tab-3"
+                                    href="#ex-with-icons-tabs-3" role="tab" aria-controls="ex-with-icons-tabs-3"
+                                    aria-selected="false"> <i class="fa-brands fa-whatsapp mx-1"></i> WhatsApp</a>
+                            </li>
+                        </ul>
+                        <!-- Tabs navs -->
+                    </div>
+                    <div class="row my-3">
+                        <!-- Tabs content -->
+                        <div class="tab-content" id="ex-with-icons-content">
+                            <div class="tab-pane fade show active" id="ex-with-icons-tabs-1" role="tabpanel"
+                                aria-labelledby="ex-with-icons-tab-1">
+                                <div class="form-group text-start">
+                                    <label for="inputUrl"><small>Website URL</small> <small
+                                            class="text-danger">*</small></label>
+                                    <input type="text" name="inputUrl" id="inputUrl" class="form-control  my-2 py-2"
+                                        placeholder="Enter URL" required>
+                                    <small class="text-danger" id="url-error"></small>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ex-with-icons-tabs-2" role="tabpanel"
+                                aria-labelledby="ex-with-icons-tab-2">
+                                <div class="form-group text-start">
+                                    <label for="inputText"><small>Message </small> <small
+                                            class="text-danger">*</small></label>
+
+                                    <textarea name="" id="inputText" rows="4" class="form-control  my-2 py-2"
+                                        placeholder="Enter Text Here" require></textarea>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="ex-with-icons-tabs-3" role="tabpanel"
+                                aria-labelledby="ex-with-icons-tab-3">
+                                <div class="form-group text-start">
+                                    <label for="inputNo"><small>WA Number (Must include Country Code e.g. +91 for
+                                            India)</small> <small class="text-danger">*</small></label>
+                                    <input type="text" name="inputNo" id="inputNo" class="form-control  my-2 py-2"
+                                        placeholder="e.g. +918899XXXXXX" required>
+
+                                    <label for="inputWAMsg"><small>Message </small> <small
+                                            class="text-danger">*</small></label>
+
+                                    <textarea name="" id="inputWAMsg" rows="4" class="form-control  my-2 py-2"
+                                        placeholder="Enter Message Here" require></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Tabs content -->
+                    </div>
+                    <hr class="my-4">
+                    <div class="text-start">
+                        <strong><i class="fa-solid fa-sliders mx-1 my-2"></i> Appearance</strong><br>
+                        <small>Customize the color of QR Code.</small>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="form-group my-3">
+
+                                    <label for="colorPicker"><small>Select Pattern Color</small></label>
+                                    <input type="color" id="colorDark" class=" form-control my-2" value="#000000">
+
+                                </div>
+                            </div>
+                            <div class=" col-md-4">
+                                <div class="form-group my-3">
+
+                                    <label for="colorLite"><small>Select Background Color</small></label>
+                                    <input type="color" id="colorLite" class="form-control my-2" value="#ffffff">
+
+                                </div>
+                            </div>
+                            <div class=" col-md-4">
+                                <div class="form-group my-3">
+                                    <label for="resetColor"><small>Set Default Color</small></label><br>
+                                    <button class="btn btn-danger  my-2" id="resetColor"> <i
+                                            class="fa-solid fa-rotate mx-1"></i> Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="my-4">
+                </div>
+                <div class="col-md-4 p-3">
+
+                    <div id="qrResult"
+                        class="row text-center  my-4 p-3 border border-1 rounded-2 align-items-center justify-content-center">
+
+                        <img id="demoQR" src="/images/qr-code.png" alt="QR Code" class="opacity-25">
+
+                        <div id="loaderQR" class="spinner-border text-primary position-absolute d-none"
+                            style="width: 3rem; height: 3rem;" role="status"></div>
+
+                    </div>
+                    <div id="qrResultFinal"
+                        class="row text-center  my-4 p-3 border border-1 rounded-2 align-items-center justify-content-center">
+
+
+                    </div>
+
+                    <div class="row p-3">
+
+                        <button class="btn btn-primary btn-lg my-3 w-100" id="generateWhatsApp" disabled
+                            style="display: none;" title="Click to Generate QR">
+                            <i class="fa-solid fa-gear mx-1 my-2"></i> Generate QR Code</button>
+                        <button class="btn btn-primary btn-lg my-3 w-100" id="downloadQR" disabled><i
+                                class="fa-solid fa-circle-arrow-down mx-1 my-2"></i>
+                            Download</button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="text-center mt-auto bg-white p-3">
+
+        <small>&#0169; <span id="getYear"></span>
+            Created by <a href="https://www.techspecsmart.com/" target="_blank">Naveen Gupta <i
+                    class="fa-solid fa-arrow-up-right-from-square"></i></a>
+        </small>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
